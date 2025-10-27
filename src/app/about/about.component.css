@@ -1,0 +1,63 @@
+.about-section {
+  position: relative;
+  min-height: 90vh;
+  background-image: url('/bp.jpg');
+  background-size: cover;
+  /* background-position:center; */
+  background-attachment: fixed;
+  padding: 60px 20px;
+  color: #fff;
+  font-family: 'Poppins', sans-serif;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(15, 15, 15, 0.7);
+  z-index: 0;
+}
+
+.about-card:hover {
+  background: none;
+  backdrop-filter: none;
+  cursor: pointer;
+}
+
+.about-card {
+  z-index: 1;
+  max-width: 800px;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(12px);
+  border-radius: 20px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.4);
+  color: #f8f9fa;
+}
+
+.about-card h1 {
+  font-size: 2.5rem;
+  color: #fff;
+}
+
+.about-card h2 {
+  font-size: 1.6rem;
+  color: #f1f1f1;
+}
+
+.about-card p {
+  font-size: 1rem;
+  color: #ddd;
+}
+
+.about-card .btn {
+  border-radius: 25px;
+  border-color: #fff;
+  transition: all 0.3s ease;
+}
+
+.about-card .btn:hover {
+  background-color: #fff;
+  color: #222;
+}

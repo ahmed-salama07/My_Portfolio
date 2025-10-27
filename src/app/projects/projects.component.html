@@ -1,0 +1,18 @@
+<div class="projects">
+  <div class="container">
+    <h2 class="text-center mb-5 mt-2">Projects</h2>
+    <div class="row">
+      @for (project of proj; track $index) {
+        <div class="card-holder col-lg-3 col-md-4 mb-4 gy-3">
+          <div class="card-body text-center" [ngStyle]="{'background-image': 'url(' + project.imgUrl + ')'}" (click)="openProject(project.projectUrl)">
+            <h5 class="card-title text-light">{{ project.title }}</h5>
+            <div class="overlay"></div>
+          </div>
+        </div>
+      }
+      @empty {
+        <h2 class="text-center mt-5">No Projects Found</h2>
+      }
+    </div>
+  </div>
+</div>
