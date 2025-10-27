@@ -1,6 +1,6 @@
 .error {
     text-align: center;
-    background-image: url('/error.jpg');
+    background-image: url('public/error.jpg');
     background-size: cover;
     height: 90vh;
     color: white;

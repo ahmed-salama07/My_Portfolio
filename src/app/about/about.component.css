@@ -1,7 +1,7 @@
 .about-section {
   position: relative;
   min-height: 90vh;
-  background-image: url('/bp.jpg');
+  background-image: url('public/bp.jpg');
   background-size: cover;
   /* background-position:center; */
   background-attachment: fixed;
